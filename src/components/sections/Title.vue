@@ -13,7 +13,7 @@ const title = 'Emotion-Director: '
 const title_color = '#42B883'
 
 // 标题补充，没有则置为''即可
-const title_supp = 'Multi-modal Prompt for Emotion-Oriented Text-to-Image Generation'
+const title_supp = 'Multi-Modal Prompt for Emotion-Oriented Text-to-Image Generation'
 
 // 标题补充颜色
 const title_supp_color = '#000000'
