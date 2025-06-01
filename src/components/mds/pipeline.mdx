@@ -2,4 +2,4 @@
 
 ![](./pipeline/pipeline.png)
 
-Pipeline of Emotion-Director. **MMP-Agent** (left) implicitly integrates textual and visual information through four steps to construct a high-quality, emotionally diverse dataset, named ETI. **MMP-Diffusion** (right) effectively achieves emotion-oriented text-to-image generation by simultaneously learning textural and visual prompts and modifying the original DPO loss function.
+**Pipeline of Emotion-Director.** VCE, EA, TPR, and Check represent the four subtasks of the MMP-Agent: visual concept extraction, emotion attribution, textual prompt revision, and checking. SA and CA refer to self-attention and cross-attention in the diffusion model, respectively. CA-L indicates that LoRA is applied to the cross-attention.

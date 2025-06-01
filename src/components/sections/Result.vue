@@ -5,6 +5,10 @@ const image_paths = [
     "./result/exp1.png",
     "./result/exp2.png",
     "./result/exp3.png",
+    "./result/sd1.5.jpg",
+    "./result/emogen_emoedit.jpg",
+    "./result/wordcloud.jpg",
+
   ]
 </script>
 
@@ -25,6 +29,15 @@ const image_paths = [
       </el-col>
       <el-col :span="14">
         <img :src=image_paths[2] style="width: 100%; margin-bottom: 50px;">
+      </el-col>
+      <el-col :span="14">
+        <img :src=image_paths[3] style="width: 100%; margin-bottom: 50px;">
+      </el-col>
+      <el-col :span="14">
+        <img :src=image_paths[4] style="width: 100%; margin-bottom: 50px;">
+      </el-col>
+      <el-col :span="14">
+        <img :src=image_paths[5] style="width: 100%; margin-bottom: 50px;">
       </el-col>
     </el-row>
 

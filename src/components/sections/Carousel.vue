@@ -61,7 +61,7 @@ export default {
         }"
         >
         <swiper-slide v-for="path in image_paths">
-          <el-image :src="path"/>
+          <el-image :src="path" style="border-right: 1px solid black;"/>
         </swiper-slide>
       </swiper>
     </el-col>

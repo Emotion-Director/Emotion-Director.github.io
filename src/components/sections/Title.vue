@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 
 import { ElIcon } from 'element-plus'
-import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@element-plus/icons-vue'
+import { TakeawayBox, Files } from '@element-plus/icons-vue'
 
 // logo地址，没有则置为""即可
 const logo = './logo.png'
@@ -17,6 +17,25 @@ const title_supp = 'Multi-Modal Prompt for Emotion-Oriented Text-to-Image Genera
 
 // 标题补充颜色
 const title_supp_color = '#000000'
+
+// 按钮颜色
+const btn_color = '#444444'
+
+// 提供引导资料链接
+const buttons = [
+  {
+    disabled: false,
+    name: "Model",
+    link: "https://huggingface.co/Emotion-Director/MMP_Diffusion/tree/main",
+    component: TakeawayBox,
+  },
+  {
+    disabled: false,
+    name: "Data",
+    link: "https://huggingface.co/datasets/Emotion-Director/ETI",
+    component: Files,
+  },
+]
 
 </script>
 
@@ -40,7 +59,23 @@ const title_supp_color = '#000000'
 
     <!-- 强调内容 -->
     <el-row justify="center" class="emphasis">
-      Anonymous NeurIPS 2025 submission
+      Anonymous NeurIPS 2025 Submission
+    </el-row>
+
+    <!-- 提供引导按钮 -->
+    <el-row justify="center" style="margin-bottom: 20px;">
+      <el-col :span="20">
+        <el-row justify="center">
+          <a :href=button.link v-for="button in buttons">
+            <el-button class="guidance-button" size="default" :color="btn_color" :disabled="button.disabled" round>
+              <el-icon :size="18">
+                <component :is="button.component" />
+              </el-icon>
+              <span class="btn-text">{{ button.name }}</span>
+            </el-button>
+          </a>
+        </el-row>
+      </el-col>
     </el-row>
 
   </div>

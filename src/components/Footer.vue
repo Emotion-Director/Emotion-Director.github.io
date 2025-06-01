@@ -8,7 +8,7 @@
     <el-watermark :content="['Emotion-Director']" :gap="['60','0']" :z-index="0">
       <el-row justify="center">
         <p class="footer">
-          Anonymous NeurIPS 2025 submission
+          Anonymous NeurIPS 2025 Submission
         </p>
       </el-row>
     </el-watermark>
